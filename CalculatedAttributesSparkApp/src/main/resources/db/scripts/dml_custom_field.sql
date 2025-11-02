@@ -1,0 +1,63 @@
+INSERT INTO prime.custom_field (
+    id,
+    field_name,
+    field_display_name,
+    data_type,
+    created_at,
+    updated_at
+)
+VALUES
+(
+    10001,
+    'item_name',
+    'item_name',
+    'CHAR',
+    NOW(),
+    NOW()
+),
+(
+    10004,
+    'skew',
+    'skew',
+    'CHAR',
+    NOW(),
+    NOW()
+);
+
+
+INSERT INTO prime.item_custom_field_value (
+    id,
+    item_id,
+    custom_field_id,
+    custom_field_value,
+    updated_at
+)
+VALUES
+(
+    10001,
+    10001,
+    10001,
+    'mega_item',
+    NOW()
+),
+(
+    10002,
+    10001,
+    10004,
+    'retro',
+    NOW()
+),
+(
+    10003,
+    10002,
+    10001,
+    'mega_item',
+    NOW()
+),
+(
+    10004,
+    10002,
+    10004,
+    'retro',
+    NOW()
+);

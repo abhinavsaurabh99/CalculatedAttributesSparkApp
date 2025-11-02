@@ -1,0 +1,58 @@
+INSERT INTO prime.attribute (
+    id,
+    attribute_name,
+    attribute_code,
+    attribute_abbreviation,
+    data_type,
+    is_multivalue,
+    created_at,
+    updated_at
+)
+VALUES
+(
+    10001,
+    'length',
+    'len001',
+    'len',
+    'CHAR',
+    false,
+    NOW(),
+    NOW()
+),
+(
+    10002,
+    'breadth',
+    'br001',
+    'br',
+    'CHAR',
+    true,
+    NOW(),
+    NOW()
+);
+
+
+INSERT INTO prime.item_attribute_value (
+    id,
+    item_id,
+    attribute_id,
+    attribute_value,
+    attribute_uom,
+    updated_at
+)
+VALUES
+(
+    10001,
+    10001,
+    10001,
+    'lenValue',
+    'cm',
+    NOW()
+),
+(
+    10002,
+    10002,
+    10002,
+    NULL,
+    NULL,
+    NOW()
+);

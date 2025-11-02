@@ -1,0 +1,70 @@
+{
+  "databaseChangeLog": [
+    {
+      "include": {
+        "file": "ddl_schema.sql",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "ddl_item.sql",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "ddl_category.sql",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "ddl_attribute.sql",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "ddl_custom_field.sql",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "ddl_formula.sql",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "dml_item.sql",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "dml_category.sql",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "dml_attribute.sql",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "dml_custom_field.sql",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "dml_formula.sql",
+        "relativeToChangelogFile": true
+      }
+    }
+  ]
+}

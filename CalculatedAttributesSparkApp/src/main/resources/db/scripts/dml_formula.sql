@@ -1,0 +1,90 @@
+INSERT INTO prime.lu_field_name (
+    id,
+    field_name
+)
+VALUES
+(
+    10001,
+    'item_name'
+),
+(
+    10002,
+    'skew'
+),
+(
+    10003,
+    'short_description'
+),
+(
+    10004,
+    'long_description'
+);
+
+
+INSERT INTO prime.category_field (
+    id,
+    category_id,
+    formula_count,
+    updated_at
+)
+VALUES
+(
+    10001,
+    10001,
+    2,
+    NOW()
+),
+(
+    10002,
+    10002,
+    2,
+    NOW()
+);
+
+
+INSERT INTO prime.formula (
+    id,
+    category_field_id,
+    field_id,
+    formula_definition,
+    encoded_formula,
+    created_at,
+    updated_at
+)
+VALUES
+(
+    10001,
+    10001,
+    10001,
+    '[invoice_description]',
+    NULL,
+    NOW(),
+    NOW()
+),
+(
+    10002,
+    10001,
+    10003,
+    '[item_name]&[part_number]&"custom_desc"',
+    NULL,
+    NOW(),
+    NOW()
+),
+(
+    10003,
+    10002,
+    10002,
+    '[my_part_number]',
+    NULL,
+    NOW(),
+    NOW()
+),
+(
+    10004,
+    10002,
+    10004,
+    '[skew]',
+    NULL,
+    NOW(),
+    NOW()
+);
