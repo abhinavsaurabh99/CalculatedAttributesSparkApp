@@ -1,4 +1,4 @@
-###### CalculatedAttributesSparkApp
+###### Calculated Attributes Spark Service
 
 ## Overview
 - This project implements a **high-performance distributed data processing system** using **Apache Spark** for 
